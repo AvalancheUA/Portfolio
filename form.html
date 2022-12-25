@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 6</title>
+</head>
+<body>
+    <h1><a href="./form.html">Hire me</a></h1>
+    <h3>Contact information</h3>
+    <table cellspacing="0" cellpadding="4" border="1">
+        <tr>
+            <th align="left">Phone</th>
+            <td>+380961083889</td>
+        </tr>
+        <tr>
+            <th align="left">Address</th>
+            <td>Somewhere in Ukraine</td>
+        </tr>
+    </table>
+</br>
+    <form action="/form.html" method="get">
+       <fieldset>
+        <legend>Contact form</legend>
+        <label for="e-mail">E-mail:</label> 
+            <input
+            type="email"
+            required  
+            name="email"
+            id="e-mail"/>
+       
+        <br> 
+        <label for="description_">Description:</label>
+        <textarea 
+        name="description" 
+        id="description_" 
+        cols="25" 
+        rows="10">
+        </textarea>
+        <br> 
+        Work type:
+        <select name="work_type">
+            <option value="office">Work in the office</option>
+            <option value="remote_work">Remote work</option>
+            <option value="one-off_project">One-off project</option>
+        </select> <br>
+        <input 
+        type="submit"
+        name="hire_me"
+        value="Hire me"/>
+       </fieldset>
+    </form>
+</body>
+</html>
