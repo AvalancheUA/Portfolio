@@ -26,13 +26,27 @@ a:visited {
 ul {
     list-style-type: square;
 }
+.table_bg {
+    background-color: beige;
+    
+}
 .name, .future_position, .experience, .skills, .achievements {
     border-bottom: 2px solid rgb(137, 207, 246);
+}
+.my_data {
+    display: block;
+}
+.name {
+    float: left;
+
 }
 .photo {
     border: 2px solid rgb(137, 207, 246);
     padding: 10px;
+    width: 100px;
+    height: 100px;
+    float: right;
 }
-.table {
-    background-color: beige;
+.future_position {
+    clear: both;
 }
