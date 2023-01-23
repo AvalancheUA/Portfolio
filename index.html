@@ -6,69 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
 </head>
-<body class="total_style">
-<hr>
-   <div class="my_data">    
-    <h1 class="name">Valentyna Kondratiuk</h1>
-    <div class="my_photo"><img  class="photo" src="image/me.jpg" alt="Photo" width="200"></div>
-    <p class="future_position"><b>Junior web-developer</b></p>
+<body class="grid-container">
+  <div class="grid-sb side-bar">    
+     <div class="name">
+        <h1> <span class="firs-name">Valentyna</span> <br> <span class="second-name">Kondratiuk</span> </h1>
+    </div>
+     
+    <img  class="photo" src="image/me.jpg" alt="Photo" width="200">
+     
+    <h2 class="side-bar-name">Contact</h2>
+     <hr class="line-sb">
+      
+        <ul class="list list-contact">
+          <li class="list-contact-item"><h3 class="list-contact-item-name">Address</h3>
+            <p class="list-contact-item-about">Kyiv, Ukraine</p>
+          </li>
+          <li class="list-contact-item"><h3 class="list-contact-item-name">Phone</h3>
+            <p class="list-contact-item-about">+380961023658</p>
+          </li>
+          <li class="list-contact-item"><h3 class="list-contact-item-name">E-mail</h3>
+            <a href="mailto:avalanche.valentina@gmail.com" class="list-contact-item-about">avalanche.valentina@gmail.com</a>
+          </li>
+          <li class="list-contact-item"><h3 class="list-contact-item-name">Linkedin</h3>
+            <a href="http://" class="list-contact-item-about">http://</a>
+          </li>
+        </ul> 
+     <h2 class="side-bar-name">Languages</h2>
+     <hr class="line-sb">
+     <ul  class="list">
+        <li class="list-language-item language-item-1">Ukrainian - C2</li>
+        <li class="list-language-item language-item-2">English - B1</li>
+     </ul>
    </div>
-<div class="posibility">
-<div class="experience">
-    <h2>Work experience</h2>
-  <div class="table">
-  <table class="table_bg" cellspacing="0" cellpadding="3" border="1" width="100%">
-    <thead>
-        <tr>
-            <th align="left" class="table_title">Period:</th>
-            <th class="table_title">Position</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>2021 - present</td>
-            <td>Lorem ipsum dolor sit amet. <a href="https://robotdreams.cc">robot_dreams</a></td>
-        </tr>
-        <tr>
-            <td rowspan="2" style="vertical-align: top;" class="table_title"><strong>Description</strong></td>
-            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, et?</td>
-        </tr>
-        <tr>
-            <td>Lorem, ipsum dolor.</td>
-        </tr>
-        <tr>
-            <td>2020-2022</td>
-            <td>Lorem, ipsum dolor. <a href="https://goit.global">GoIt</a></td>
-        </tr>
-        <tr>
-            <td rowspan="3" style="vertical-align: top;" class="table_title"><strong>Description</strong></td>
-            <td>Lorem ipsum dolor sit amet consectetur.</td>
-        </tr>
-        <tr>
-            <td>Lorem, ipsum.</td>
-        </tr>
-        <tr>
-            <td>Lorem ipsum dolor sit amet.</td>
-        </tr>
-    </tbody>
-  </table>
-</div>
-<div class="skills">
-    <h2>Skills:</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Figma</li>
-    </ul>
-</div>
-<div class="achievements">
-    <h2>Achievements:</h2>
-    <ol>
-        <li>Basics of HTML and CSS </li>
-        <li>That is  all)</li>
-    </ol>
-</div>
-</div>
+
+   <div class=" grid-mc main-content">
+       <div class="mc mc-summary">
+           <h2 class="main-content-name">Summary</h2>
+           <hr class="line-mc">
+           <p class="main-content-about">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos officia provident qui rem animi suscipit magni cumque corporis rerum cum, saepe numquam, consectetur vero, necessitatibus nostrum incidunt natus repellat sint?</p>
+       </div>
+       <div class=" mc mc-skills">   
+            <h2 class="main-content-name">Skills:</h2>
+            <hr class="line-mc">
+           <table>
+            <tbody>
+                <ul class="main-content-about">
+                <tr>
+                    <td><li>HTML</li></td>
+                    <td><li>CSS</li></td>
+                </tr>
+                <tr>
+                    <td><li>Figma</li></td>
+                    <td><li>HTML</li></td>
+                </tr>
+                <tr>
+                    <td> <li>Figma</li></td>
+                    <td><li>CSS</li></td>
+                </tr>
+                <tr>
+                    <td><li>CSS</li></td>
+                    <td><li>HTML</li></td>
+                </tr></ul>
+            </tbody>
+           </table>
+       </div>
+       <div class=" mc mc-work">
+            <h2 class="main-content-name">Work experiance</h2>
+            <hr class="line-mc">
+            <p class="main-content-about">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A alias laborum provident ex consectetur rerum iusto aspernatur vitae facilis quas consequuntur ducimus, amet molestias vel minus, placeat distinctio ipsum delectus doloremque blanditiis praesentium sint? Cum voluptatibus nobis quibusdam dicta ratione odio voluptates, impedit quisquam obcaecati, adipisci quidem facere fugiat eligendi.</p>
+            <p class="main-content-about">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla asperiores nisi id ipsam possimus! Beatae quibusdam vitae aspernatur ipsa animi quia, ipsum temporibus officia in excepturi minus doloribus alias repellendus explicabo eaque magnam laudantium ipsam exercitationem hic dicta doloremque saepe libero? Dolore consequuntur dolorem, quam nulla, enim fuga aperiam quos incidunt temporibus quas adipisci sint odit molestias hic sequi dolores.</p>
+        </div>
+        <div class="mc mc-education">
+            <h2 class="main-content-name">Education</h2>
+            <hr class="line-mc">
+            <p class="main-content-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, reiciendis sint. Minus aliquid aut, quod possimus sed facere? Quasi aliquid totam vero hic omnis amet iusto sunt explicabo quia expedita.</p>
+        </div>
+    </div>
 </body>
 </html>
