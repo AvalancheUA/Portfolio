@@ -1,9 +1,18 @@
-:root {
+.main-theme {
     --font-color-for-side-bar: #263036;
     --font-color-primary-for-main: #1E1E1E;
     --font-color-secondary-for-main: #263036;
     --color-line-for-side-bar: #1E1E1E;
     --color-line-for-for-main: #000000;
+    --color-for-side-bar-border: grey;
+    --color-background-for-side-bar: #86A3B4;
+    --color-background-for-main-content: #FFFFFF;
+    --margin-left-for-side-bar: 40px;
+    --margin-top-for-main-content-name: 49px;
+    --margin-top-for-main-content-about: 28px;
+    --margin-top-for-line-side-bar: 15px;
+    --text-shadow-for-name: 2px 2px 2px #FFF2E1;
+
 }
 
 .grid-container {
@@ -11,11 +20,12 @@
     grid-template-columns: 385px 815px;
     grid-template-rows: 1667px;
     font-family: 'Inter', sans-serif;
-    
+    background-color: var(--color-background-for-main-content);
 }
 
 .grid-sb {
-    border: 1px solid #1E1E1E;
+    border: 1px solid;
+    border-color: var(--color-for-side-bar-border);
     position: fixed;
 }
 
@@ -25,16 +35,15 @@
 }
 
 .side-bar {
-    background-color: #86A3B4;
-    
-
+    background-color: var(--color-background-for-side-bar);
 }
 
 .name {
     width: 260px;
     height: 96px;
     margin-top: 58px;
-    margin-left: 40px;
+    margin-left: var(--margin-left-for-side-bar);
+    text-shadow: var(--text-shadow-for-name);
 }
 
 .firs-name {
@@ -54,7 +63,7 @@
 }   
 
 .side-bar-name {
-    margin-left: 40px;
+    margin-left: var(--margin-left-for-side-bar);
     color: var(--font-color-for-side-bar);
     font-size: 32px;
 }
@@ -62,9 +71,11 @@
 
 .line-sb {
     width: 289px;
-    border: 4px solid;;
+    border: 4px solid;
     color: var(--color-line-for-side-bar);
-    margin-left: 42px;}
+    margin-left: 42px;
+    margin-top: var(--margin-top-for-line-side-bar);
+}
 
 .list {
     list-style: none;
@@ -78,7 +89,7 @@
 
 .list-contact-item-about {
     font-size: 16px;
-    
+    color: var(--font-color-for-side-bar); 
 }
 
 .list-language-item {
@@ -100,16 +111,8 @@
     margin-top: 58px;
 }
 
-.mc-skills {
-    margin-top: 49px;
-}
-
-.mc-work {
-    margin-top: 49px;
-}
-
-.mc-education{
-    margin-top: 58px;
+.mc-skills, .mc-work, .mc-education {
+    margin-top: var(--margin-top-for-main-content-name);
 }
 
 .main-content-name {
@@ -123,16 +126,18 @@
     border: 4px solid;
     color: var(--color-line-for-for-main);
     margin-left: 0px;
+    margin-top: var(--margin-top-for-main-content-about);
 }
 
 .main-content-about {
     font-size: 16px;
     color: var(--font-color-secondary-for-main);
-    margin-top: 28px;
+    margin-top: var(--margin-top-for-main-content-about);
     width: 706px;
 }
 
 table {
     width: 621px;
     height: 84px;
+    color: var(--font-color-secondary-for-main);
 }

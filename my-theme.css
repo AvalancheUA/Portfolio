@@ -1,0 +1,15 @@
+.my-theme {
+    --font-color-for-side-bar: #6A040F;
+    --font-color-primary-for-main: #023069;
+    --font-color-secondary-for-main: #7087DD;
+    --color-line-for-side-bar: #FF6E4A;
+    --color-line-for-for-main: #B5D3F7;
+    --color-for-side-bar-border: #E6CCB2;
+    --color-background-for-side-bar: #F8AB39;
+    --color-background-for-main-content: #FFF2E1;
+    --margin-left-for-side-bar: 40px;
+    --margin-top-for-main-content-name: 49px;
+    --margin-top-for-main-content-about: 28px;
+    --margin-top-for-line-side-bar: 15px;
+    --text-shadow-for-name: 3px 3px 3px #7087DD;
+}
