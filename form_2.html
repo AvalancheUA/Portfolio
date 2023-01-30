@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form_2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <title>Form</title>
+</head>
+<body>
+   <div  class="form">  
+      <h1><a href="./form_2.html">Hire me</a></h1>
+      <h3>Contact information</h3>
+        <table>
+          <tr>
+            <th>Phone</th>
+            <td>+380961083889</td>
+           </tr>
+           <tr>
+            <th>Address</th>
+            <td>Somewhere in Ukraine</td>
+           </tr>
+        </table>
+       </br>
+     <form action="/form.html" method="get" >
+       <fieldset>
+        <legend>Contact form</legend>
+        <label for="e-mail">E-mail <span class="star">*</span>:</label> 
+            <input
+            type="email"
+            required  
+            name="email"
+            id="e-mail"
+            placeholder="Enter your e-mail"/>
+       
+        <br> 
+        <label for="description_">Description:</label>
+        <textarea 
+        name="description" 
+        id="description_" 
+        >
+        </textarea>
+        <br> 
+        <label for="work_type">Work type:</label>
+        <select name="work_type" id="work_type">
+            <option value="office">Work in the office</option>
+            <option value="remote_work">Remote work</option>
+            <option value="one-off_project">One-off project</option>
+        </select> <br>
+        <input 
+        type="submit"
+        name="hire_me"
+        value="Hire me"
+        <a href=""
+        />
+       </fieldset>
+     </form>
+    </div>
+</body>
+</html>
