@@ -31,7 +31,15 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1.2fr;  
     }
-    
+    .name-mobil{
+        margin-left: 2%;
+    }
+    .photo{
+        margin-left: 6%;
+    }
+    .sb-mobil {
+        margin-left: 2%; 
+    }
 }
 
 .grid-sb {
