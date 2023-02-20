@@ -51,6 +51,23 @@
 
 .side-bar {
     background-color: var(--color-background-for-side-bar);
+    animation: bar 1s linear;
+}
+
+.main-content {
+    animation: bar 1s linear .5s;
+}
+
+
+@keyframes bar {
+    0%{
+        margin-top: 50vh;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 0;
+        opacity: 1;
+    }
 }
 
 .name {
@@ -82,8 +99,20 @@
     width: 500px;
     z-index: 1;
     position: absolute;
-    box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.25);;
+    box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.25);
+    animation: foto 1s ;
 }   
+
+@keyframes foto {
+    0%{
+        width: 382px;
+        opacity: 1;
+    }
+    100%{
+        width: 500px;
+        opacity: 1;
+    }
+}
 
 .side-bar-name {
     margin-left: var(--margin-left-for-side-bar);
@@ -165,6 +194,16 @@
 
 .last:hover {
     opacity: 100%;
+    animation: exper 1s linear;
+}
+
+@keyframes exper {
+    0%{
+        opacity: 70%
+    }
+    100%{
+        opacity: 100%;
+    }
 }
 
 table {
