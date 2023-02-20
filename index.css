@@ -41,7 +41,10 @@
     font-size: 40px;
     line-height: 48px;
  }
-    
+ 
+.form {
+    text-decoration: none;
+} 
 .photo {
     width: 382px;
     margin-top: 36px;
