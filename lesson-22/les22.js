@@ -13,8 +13,9 @@ if (secondNumber!=0) {
     alert(firsNumber/secondNumber);
 } 
 if (firsNumber<secondNumber) {
-    alert("Ви впевнені, що хочете продовжити операцію?");
-} else {
+    let question = confirm("Ви впевнені, що хочете продовжити операцію?");
+    alert(question);
+} if (firsNumber<secondNumber) {
     alert(firsNumber - secondNumber);
 }  
 if (firsNumber === '' ||  secondNumber === '') {
